@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+*{
+margin: 0px;
+padding: 0px;
+}
+body {
+font-family: 'Zilla Slab', sans-serif;
+background-image: url('https://picsum.photos/1600/900/?,weather,mountain,humidity,wind,rain');
+background-size: cover;
+}
+input, button {
+font-family: 'Zilla Slab', sans-serif;
+font-weight: bold;
+font-size: 16px;
+color: white;
+}
+#topbar,#more, #forecastlabel, #forecast #date, #footer {
+background-color: #000000a9;
+color: white;
+}
+#topbar {
+    background-color: rgba(0, 0, 0, 0.726);
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 8px;
+    text-align: left;
+    }
+    img {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 40px;
+    float: left;
+    }
+    #searchbox {
+    margin: 0%;
+    padding: 10px;
+    display: none;
+    }
+    #searchbox input {
+    position: absolute;
+    top: 13%;
+    right: 37.5%;
+    background-color: rgba(41, 41, 40, 0.616);
+    border-radius: 24px;
+    padding: 0.2em 1em;
+    border: 1mm solid rgba(3, 3, 3, 0.795);
+    height: 25px;
+    width: 350px;
+    }
+    ::placeholder{
+        color: rgba(255, 255, 255, 0.623);
+        }
+        #searchicon{
+        cursor: pointer;
+        }
+        #searchbox button {
+        position: relative;
+        top: 20px;
+        left: 11.5%;
+        transform: translate(-50%, -50%);
+        padding: 0px;
+        border: none;
+        background: none;
+        outline: none;
+        color: rgb(0, 0, 0);
+        margin-left: 5px;
+        }
+        /*
+        button :hover {
+        background: #7c7c7cb2;
+        }
+        */
+        #topbar #searchicon {
+        float: right;
+        }
+        #mainbody {
+        margin-left: 40%;
+        width: 26%;
+        color: white;
+        text-align: center;
+        /*animation: appear 1s 1;*/
+        animation: appear 2s 1;
+        }
+        .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em 100px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.658);
+        border-radius: 10px;
+        }
+        #forecast {
+        padding: 20px;
+        width: 300px;
+        height: 350px;
+        border: 1px solid white;
+        color: white;
+        /* animation: appear 2s ; */
+        border-radius: 10px;
+        }
+        #city {
+        font-size: 50px;
+        padding-top: 5px;
+        padding-left: 10px;
+        }
+        #mainbody img {
+        margin: 0;
+        float: inherit;
+        width: 25%;
+    }
+    #temp {
+    font-size: 50px;
+    padding-right: 5px;
+    font-weight: bold;
+    }
+    #cond {
+    font-weight: 500;
+    float: inherit;
+    font-size: 20px;
+    padding-left: 5px;
+    }
+    .morebody{
+    width: 20%;
+    padding: 1%;
+    color: white;
+    }
+    #more {
+    width: 280px;
+    padding: 5px;
+    margin: 5px;
+    height: 25px;
+    border-radius: 8px;
+    }
+    #more #label {
+    float: left;
+    padding-left: 7px;
+    }
+    #wind {
+        text-align: right;
+        }
+        #forecast img {
+        height: 70px;
+        width: 70px;
+        float: left;
+        margin: 0%;
+        padding: 0%;
+        }
+        #forecast #date {
+        color: white;
+        font-size: 24px;
+        padding: 5px;
+        border-radius: 2px;
+        padding: 10px;
+        }
+        #forecast #avgtemp {
+        float: right;
+        padding-top: 3px;
+        font-size: 23px;
+        font-weight: bold;
+        }
+        #forecast #summary {
+        font-size: 20px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 10px;
+        }
+        #wind, #direction, #humidity, #feel, #avghumidity, #rainchance, #sunrise, #sunset, 
+        #moonrise, #moonset, #chanceofrain {
+        float: right;
+        }
+        #forecastlabel {
+        color: white;
+        padding: 5px;
+        }
+        #forecast #top {
+        height: 45px;
+        padding: 5px;
+        }
+        #footer {
+        font-size: 18px;
+        color: white;
+        padding: 8px;
+        }
+        @keyframes appear {
+        from {
+        width: 0px;
+        }
+        to {
+        width: 300px;
+        }
+        }
+        @keyframes forecast {
+        from {
+        height: 0px;
+        width: 0px;
+    }
+    to {
+    height: 420px;
+    width: 300px;
+    }
+    }
